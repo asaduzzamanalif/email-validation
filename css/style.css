@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #373737;
+    color: #fff;
+}
+
+h3{
+    position: relative;
+    font-size: 20px;
+    color: #fff;
+    font-weight: 500;
+    letter-spacing: 1px;
+    margin: 0 0 5px 0;
+}
+
+form{
+    position: relative;
+}
+
+form #email{
+    width: 300px;
+    background: #292929;
+    outline: none;
+    border: none;
+    padding: 10px;
+    border-radius: 6px;
+    color: #fff;
+    font-style: 10px;
+}
+
+form #inputBox{
+    position: relative;
+}
+
+#text {
+    display: block;
+    color: #000;
+    font-weight: 300;
+    font-style: italic;
+    padding: 5px;
+}
+
+button{
+    background: indianred;
+    color: #000;
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+    display: block;
+    width: 100%;
+    cursor: pointer;
+}
+
+#form.invalid .inputBox::before {
+	content: '';
+	position: absolute;
+	right: 15px;
+	top: 15px;
+	width: 15px;
+	height: 15px;
+	background: url('../images/invalid.png');
+	background-size: cover;
+	z-index: 1000;
+}
+
+#form.valid .inputBox:before{
+    content: '';
+    position: absolute;
+    right: 12px;
+    top: 12px;
+    width: 24px;
+    height: 24px;
+    background: url('../images/valid.png');
+    background-size: cover;
+    z-index: 1000;
+}
